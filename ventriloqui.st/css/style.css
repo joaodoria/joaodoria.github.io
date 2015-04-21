@@ -34,7 +34,7 @@ img {
 }
 
 p {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 130%;
 }
 
@@ -196,6 +196,10 @@ a:hover {
 
 #b2 {
 	background-color: rgba(0,0,0,0.15)
+}
+
+.t2-main {
+	font-size: 28px;
 }
 
 .turquoise {
