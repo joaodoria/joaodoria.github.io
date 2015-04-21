@@ -1,7 +1,14 @@
+/*font-family:'Neue Haas Unica W01 Light';
+font-family:'Neue Haas Unica W01 Lig1492560';
+font-family:'Neue Haas Unica W01 Regular';
+font-family:'Neue Haas Unica W01 Hea1492559';
+font-family:'Neue Haas Unica W01 Bold';
+font-family:'Neue Haas Unica W01 Bol1492557';*/
+
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica;
+	font-family:'Neue Haas Unica W01 Regular';
 	font-size: 16px;
 }
 
