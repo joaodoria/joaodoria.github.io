@@ -81,10 +81,22 @@ a:hover {
 	background-color: yellow;
 }
 
+.marquee {
+  position: relative;
+  top: 50%;
+  transform: translateY(-130%);
+  overflow: hidden;
+/*  border: 1px solid #ccc;
+  background: #ccc;
+*/}
+
+.marquee-tx {
+	font-size: 80px;
+}
+
 .workshop-description {
 	padding-left:5%;
 	padding-right: 5%;
-	/*font-style: italic;*/
 }
 
 .close {
