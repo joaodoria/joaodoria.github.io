@@ -19,6 +19,9 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: space-around; 	
 	text-align: center;
 	top: 0;
 	z-index: 3;
@@ -55,6 +58,10 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center;
+	font-weight: inherit;
 }
 
 h2 {
@@ -63,7 +70,7 @@ h2 {
 	font-size: 32px;
 	border-top: 1px solid;
 	padding-top: 60px;
-/*	color: blue;*/
+
 }
 
 h3 {
@@ -125,6 +132,9 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center; 
 	margin: 0;
 	font-size: 56px;
 	width: 100%;
@@ -278,4 +288,42 @@ a:hover {
 	display: flex;
 	align-items: center;
 	text-align: justify;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center; 
+}
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.25; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.25; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
