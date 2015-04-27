@@ -37,6 +37,7 @@
 			src:url("Fonts/8508cf3d-6461-49ec-a435-858f5ead2f8b.eot?#iefix") format("eot"),url("Fonts/dfa9d078-533c-44d9-9dd9-deaafbff5a96.woff2") format("woff2"),url("Fonts/4142b00a-232a-49e8-803c-541f8b932fa1.woff") format("woff"),url("Fonts/cecd8354-0b61-4068-b4e6-3bb48ba2ca12.ttf") format("truetype"),url("Fonts/d12886e5-81c2-4844-99c4-e329d374da92.svg#d12886e5-81c2-4844-99c4-e329d374da92") format("svg");
 			}
 	</style>
+
 </head>
 
 	<body>
@@ -61,13 +62,13 @@
 					<h1 class="centered-horizontal blue">Speak up!</h1>
 
 					<nav class="centered-horizontal blue">
-						<a id="btn-about" href="#dat">What's that?</a>
-						<a id="btn-workshops" href="#welcome">Welcome you!</a>
-						<a id="btn-tutors" href="#bunch">The Bunch</a>
-						<a id="btn-about" href="#apply">Apply</a>
+						<a class="pan2" id="btn-about" href="#dat">What's that?</a>
+						<a class="pan1" id="btn-workshops" href="#welcome">Welcome you!</a>
+						<a class="pan4" id="btn-tutors" href="#bunch">The Bunch</a>
+						<a class="pan1" id="btn-apply" href="#">Apply</a>
 					</nav>
 
-					<div class="scroll content blue aqua">
+					<div id="t1-content" class="scroll content blue aqua">
 								<p id="dat" class="t2-main" style="text-align:center;font-size:64px;line-height:0;">&#8226;</p>
 								<p class="t2-main">They were just four people, living their lives, but one day, destiny intervened.<br/></p>
 								<p class="t2-main">They knew that is was much more than a hunch.<br/>This graphic design bunch.</p>
@@ -102,7 +103,7 @@
 					<h1 class="centered-horizontal chartreuse">The Ventriloquist Summerschool</h1>
 
 					<nav class="centered-horizontal chartreuse">
-						<a id="btn-about" href="#apply">Apply Now</a>
+						<a class="pan1" id="btn-apply" href="#">Apply Now</a>
 					</nav>
 
 						<p class="marquee marquee-tx">
@@ -128,23 +129,11 @@
 					<h1 class="centered-horizontal">Oslo, Aug 10–15th</h1>
 
 					<nav class="centered-horizontal">
-						<a id="btn-about" href="#apply">Face The Consequences And Apply Now</a>
+						<a class="pan1" id="btn-apply" href="#">Face The Consequences And Apply Now</a>
 					</nav>
 
 					<div class="centered-vertical-flow content">
-						<p>
-						Speak out and face the consequences.
-
-She was just a design writer, looking for a great story. Little did she know that a scoop was looking for her.
-
-He had taught at schools such as Yale and the Oslo Academy. Now he was out to teach everyone a lesson.
-
-A hard-working art director, not keeping his head down. He was what trouble was looking for, and it had found him.
-
-She was asking too many questions about how communication and money talks, but how would she make design do the same thing?
-
-Oslo, 2015, no one is safe from the voice of design. It rules the city, and the city answers to no one. In the summer a school will take form where designers, architects, artists - both students and professionals - will make the city answer to them. Posing the question: What is voice in design?</p>
-
+						<p>Speak out and face the consequences. She was just a design writer, looking for a great story. Little did she know that a scoop was looking for her. He had taught at schools such as Yale and the Oslo Academy. Now he was out to teach everyone a lesson. A hard-working art director, not keeping his head down. He was what trouble was looking for, and it had found him. She was asking too many questions about how communication and money talks, but how would she make design do the same thing? Oslo, 2015, no one is safe from the voice of design. It rules the city, and the city answers to no one. In the summer a school will take form where designers, architects, artists - both students and professionals - will make the city answer to them. Posing the question: What is voice in design?</p>
 					</div>
 			</div>
 
@@ -167,14 +156,14 @@ Oslo, 2015, no one is safe from the voice of design. It rules the city, and the 
 					<h1 class="centered-horizontal aliceblue">Apply no later than May 1st</h1>
 
 					<nav class="centered-horizontal aliceblue">
-						<a id="btn-about" href="#about">About</a>
-						<a id="btn-workshops" href="#workshops">Workshops</a>
-						<a id="btn-tutors" href="#tutors">Tutors</a>
-						<a id="btn-about" href="#apply">Apply</a>
-						<a id="btn-colophon" href="#colophon">Colophon</a>
-				</nav>
+						<a class="pan2" id="btn-about" href="#about">About</a>
+						<a class="pan3" id="btn-workshops" href="#workshops">Workshops</a>
+						<a class="pan4" id="btn-tutors" href="#tutors">Tutors</a>
+						<a class="pan1" id="btn-apply" href="#">Apply</a>
+						<a class="pan5" id="btn-colophon" href="#colophon">Colophon</a>
+					</nav>
 
-					<div class="content aliceblue">
+					<div id="b2-content" class="content aliceblue">
 						<h2 id="about">About</h2>
 
 							<p>The initial edition of The Ventriloquist Summerschool will look at how and why designers speak through their own creations. What can it mean to use own voice, regardless of the arena of action, personally or professionally?</p>
@@ -240,11 +229,41 @@ Oslo, 2015, no one is safe from the voice of design. It rules the city, and the 
 <script type='text/javascript' src="js/jquery.scrollTo.min.js"></script>
 <script type='text/javascript' src='js/jquery.marquee.min.js'></script>
 
-<script>
+<script type="text/javascript">
 
 	$('.marquee').marquee( {
 		duration: 8000
 	});
+
+	$('.pan1').on("click", function () {
+	    $("#t1-content").scrollTo($("#welcome"), 500);
+	    $("#b2-content").scrollTo($("#apply"), 500);
+	    return false;
+	});
+
+	$('.pan2').on("click", function () {
+	    $("#t1-content").scrollTo($("#dat"), 500);
+	    $("#b2-content").scrollTo($("#about"), 500);
+	    return false;
+	});
+
+	$('.pan3').on("click", function () {
+	    $("#t1-content").scrollTo($("#welcome"), 500);
+	    $("#b2-content").scrollTo($("#workshops"), 500);
+	    return false;
+	});
+
+	$('.pan4').on("click", function () {
+	    $("#t1-content").scrollTo($("#bunch"), 500);
+	    $("#b2-content").scrollTo($("#tutors"), 500);
+	    return false;
+	});
+
+	$('.pan5').on("click", function () {
+	    $("#b2-content").scrollTo($("#colophon"), 500);
+	    return false;
+	});
+
 
 	$("#close-t1").click(function() {
 	    $("#splash-t1").fadeToggle( "fast", function() {});
