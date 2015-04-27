@@ -236,9 +236,17 @@
 	});
 
 	$('.pan1').on("click", function () {
-	    $("#t1-content").scrollTo($("#welcome"), 500);
-	    $("#b2-content").scrollTo($("#apply"), 500);
-	    return false;
+			var	a = '#splash-b2',
+				b = $('#splash-b2').css("display", "none");
+
+			if(a == b) {
+				$a.fadeToggle( "fast", function() {});
+			}
+			else {
+			    $("#t1-content").scrollTo($("#welcome"), 500);
+			    $("#b2-content").scrollTo($("#apply"), 500);
+			    return false;
+			}
 	});
 
 	$('.pan2').on("click", function () {
