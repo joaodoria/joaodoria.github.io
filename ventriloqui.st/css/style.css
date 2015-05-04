@@ -5,6 +5,9 @@ font-family:'Neue Haas Unica W01 Hea1492559';
 font-family:'Neue Haas Unica W01 Bold';
 font-family:'Neue Haas Unica W01 Bol1492557';*/
 
+*::selection{ color: yellow; }
+*::-moz-selection{ color: yellow; }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -337,4 +340,19 @@ a:hover {
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
+}
+
+.grafill {
+	display: block;
+	max-width: 40%;
+	min-width: 20%;
+	height: auto;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+@media(max-width: 1080px) {
+	.close {
+		height: 42px;
+	}
 }
