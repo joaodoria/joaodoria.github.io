@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>clippy test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<div class="main taller">
+	<div class="a draggable tall">La</div>
+	<div class="b draggable mid">La</div>
+	<div class="c draggable tall ">La</div>
+	<div class="d draggable mid">La</div>
+	<div class="e draggable tall">La</div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="draggabilly.min.js"></script>
+<script src="dev/flickity.pkgd.min.js"></script>
+<script src="dev/jquery.browser.min.js"></script>
+<script src="dev/clip.js"></script>
+
+	<script>
+		// if you have multiple .draggable elements
+		// get all draggie elements
+		var draggableElems = document.querySelectorAll('.draggable');
+		// array of Draggabillies
+		var draggies = []
+		// init Draggabillies
+		for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+		  var draggableElem = draggableElems[i];
+		  var draggie = new Draggabilly( draggableElem, {
+		    // options...
+		    containment: '.main'
+		  });
+		  draggies.push( draggie );
+		}
+	</script>
+
+</html>
