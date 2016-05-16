@@ -140,7 +140,7 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
   #four { background-color: RGBA(255, 43, 6, 1); }
 
   #tvss h1 {
-  	color: RGBA(255, 255, 255, 1);
+  	color: RGBA(131, 251, 49, 1);;
   }
 
   #a h1 {
@@ -171,6 +171,11 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
   #o:hover, #p:hover {
   	color: yellow;
   	cursor: pointer;
+  }
+
+  #o, #p, #q p, h1 {
+  	color: white;
+  	margin: 20px;
   }
 
 	</style>
@@ -258,8 +263,7 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
 		<div id="four" class="split split-horizontal">
 			<div id="o"><h1>Apply<br/>until</h1></div>
 			<div id="p"><h1>Jun 25th</h1></div>
-			<div id="q"><h1><p>Applications are open until July 1st and are free of charge. Please fill in the form by clicking on the link below and we will answer you by Week 28 (Jul 12 max).</p></h1>
-				<p style="text-align:center;">Until then &mdash; get in touch if you have something to say: <a href="mailto:the@ventriloqui.st" style="pointer:cursor;">the@ventriloqui.st</a></p>
+			<div id="q"><p>Applications are open until July 1st and are free of charge. Please fill in the form by clicking on the link below and we will answer you by Week 28 (Jul 12 max).<br/><br/>Until then &mdash; get in touch if you have something to say: <a href="mailto:the@ventriloqui.st" style="pointer:cursor;">the@ventriloqui.st</a></p>
 			</div>
 		</div>
 		<div id="five" class="split split-horizontal">
@@ -301,6 +305,7 @@ Split(['#i', '#j', '#k', '#l', '#m', '#n'], {
 });
 
 Split(['#o', '#p', '#q'], {
+	sizes: [25, 25, 50],
     direction: 'vertical',
 	cursor: 'row-resize',
 	snapOffset: 1
