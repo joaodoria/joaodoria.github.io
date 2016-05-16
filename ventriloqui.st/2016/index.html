@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>The Ventriloquist Summerschool 2016</title>
+<meta charset='utf-8' />
+	<title>The Ventriloquist Summerschool</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 <head>
-	<style>
+	<style type="text/css">
 	@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=fe5d1798-178a-4e5d-b715-9678c48d534f");
 	@font-face{
 	font-family:"Neue Haas Unica W01 Light";
@@ -24,165 +43,6 @@
 	src:url("fonts/960b8d39-bee7-47a1-a258-c73f8aabab91.eot?#iefix");
 	src:url("fonts/960b8d39-bee7-47a1-a258-c73f8aabab91.eot?#iefix") format("eot"),url("fonts/cc589c6c-1ce4-4279-8684-c378497d1c68.woff2") format("woff2"),url("fonts/8546c78d-5a38-4c7b-9371-5a70d803922a.woff") format("woff"),url("fonts/cb4a00d4-9830-4ba3-914c-8eae604824b6.ttf") format("truetype"),url("fonts/611ebee3-c884-4580-86d4-d81a6180c188.svg#611ebee3-c884-4580-86d4-d81a6180c188") format("svg");
 	}
-
-  * {
-    -webkit-font-smoothing: antialiased;
-  }
-
-	*::selection{ color: chartreuse; }
-	*::-moz-selection{ color: chartreuse; }
-
-  html, body {
-    height: 100%;
-    margin: 0px;
-  }
-
-  p {
-  	font-family:"Neue Haas Unica W01 Light";
-  	font-size: 16px;
-  	line-height: 18px;
-  }
-
-  body {
-/*    padding: 8px;*/
-    background-color: #F6F6F6;
-    box-sizing: border-box;
-  }
-
-  h1 {
-  	font-family:"Neue Haas Unica W01 Light";
-  	font-size: 5vw;
-  	font-weight: 100;
-  	line-height: 100%;
-  	text-align: center;
-  }
-
-  h2 {
-  	font-family:"Neue Haas Unica W01 Regular";
-  	font-size: 22px;
-  	font-weight: 100;
-  	line-height: 22px;
-  	text-align: center;
-  	letter-spacing: -0.5px;
-  }
-
-  strong {
-  	font-family:"Neue Haas Unica W01 Regular";
-  	font-weight: 100;
-  	letter-spacing: -0.5px;
-  }
-
-a:hover { color: red !important; background-color: yellow; }
-
-  .split {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .content {
-    border: 1px solid #C0C0C0;
-    box-shadow: inset 0 1px 2px #e4e4e4;
-    background-color: #fff;
-  }
-
-  .gutter {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
-  .gutter.gutter-horizontal {
-    cursor: col-resize;
-    background-image: url('images/dot.svg');
-  }
-
-  .gutter.gutter-vertical {
-    cursor: row-resize;
-    background-image: url('images/dot.svg');
-  }
-
-  .split.split-horizontal, .gutter.gutter-horizontal {
-    height: 100%;
-    float: left;
-  }
-
-  .content {
-  border: 1px solid #C0C0C0;
-  box-shadow: inset 0 1px 2px #e4e4e4;
-  background-color: #fff;
-  }
-
-  #a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #tvss {overflow-x: hidden; overflow-y: auto;}
-
-  #a, #c, #i, #o, #p, #tvss {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	-webkit-justify-content: center;
-	align-items: center;
-	justify-content: center;
-  }
-
-  #one { background-color: RGBA(25, 34, 251, 1); }
-  #two { overflow: hidden; background-color: RGBA(131, 251, 49, 1); }
-  #three { overflow: hidden; background-color: RGBA(254, 252, 49, 1); }
-  #four { background-color: RGBA(255, 43, 6, 1); }
-  #five { background-color: RGBA(243, 249, 255, 1); padding-right: 5px;}
-
-  #five p {
-  	font-size: 12px;
-  	line-height: 110%;
-  }
-
-  #tvss h1 {
-  	color: RGBA(131, 251, 49, 1);;
-  }
-
-  #a h1 {
-  	color: RGBA(255, 181, 33, 1);
-  }
-
-  #b p {
-	  	color: RGBA(0, 252, 255, 1);		
-	  	font-size: 24px;
-	  	line-height: 130%;
-		margin: 25px;
-  }
-
-  #c, #i p { text-align: center;}
-
-  #c, #d, #e, #f, #g, #h p {
-  	margin-top: 5px;
-  	margin-left: 10px;
-  	margin-right: 5px;
-  }
-
-  #i, #j, #k, #l, #m, #n p {
-  	margin-top: 2px;
-  	margin-left: 7px;
-  	margin-right: 2px;  	
-  }
-
-  #o:hover, #p:hover {
-  	color: yellow;
-  	cursor: pointer;
-  }
-
-  #o, #p, #q p, h1 {
-  	color: yellow;
-  	margin: 20px;
-  }
-
-  .logos {
-	display: block;
-	max-width: 90%;
-	min-width: 20%;
-	height: auto;
-}
 
 	</style>
 </head>
@@ -273,9 +133,9 @@ a:hover { color: red !important; background-color: yellow; }
 			</div>
 		</div>
 		<div id="five" class="split split-horizontal">
-			<div id="r"><p>We'd like to thank Arctic Paper and 1857 for partnering up with our efforts</p></br><img src="images/1857_.svg" class="logos"></br></br><img src="images/arctic_paper.svg" class="logos"></div>
+			<div id="r"><p>We'd like to thank Arctic Paper and 1857 for partnering up with our efforts</p><img src="img/1857_.svg" class="logos"><img src="img/arctic_paper.svg" class="logos"></div>
 			<div id="s"><p>The Ventriloquist Summerschool was conceived and is organized by Jo&atilde;o Doria and Kristina Ketola Bore</p></div>			
-			<div id="t"><p>The Ventriloquist Summerschool 2016 is made possible through the Grafill Stortstipend 2016</p></br><img src="images/grafill_logo_pos.svg" class="logos">	</div>
+			<div id="t"><p>The Ventriloquist Summerschool 2016 is made possible through the Grafill Stortstipend 2016</p></br><img src="img/grafill_logo_pos.svg" class="logos"></div>
 		</div>
 <!-- 		<div id="six" class="split split-horizontal">Colophon</div>
  --></body>
