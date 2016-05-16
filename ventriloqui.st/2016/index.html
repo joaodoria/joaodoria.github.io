@@ -280,6 +280,19 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
 <script src="scripts/split.js"></script>
 <script type="text/javascript">
 
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '553e1de992c6ac484c0051da');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://track.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+
 Split(['#one', '#two', '#three', '#four', '#five'], {
 	sizes: [38, 16, 16, 22, 8],
     minSize: [60, 60, 60, 60, 30],
