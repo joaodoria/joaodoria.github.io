@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+	<style>
+/*font-family:'Neue Haas Unica W01 Light';
+font-family:'Neue Haas Unica W01 Lig1492560';
+font-family:'Neue Haas Unica W01 Regular';
+font-family:'Neue Haas Unica W01 Hea1492559';
+font-family:'Neue Haas Unica W01 Bold';
+font-family:'Neue Haas Unica W01 Bol1492557';*/
+			@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=fe5d1798-178a-4e5d-b715-9678c48d534f");
+			@font-face{
+			font-family:"Neue Haas Unica W01 Light";
+			src:url("fonts/001e59a9-197e-4fb1-9e72-cef21b186c03.eot?#iefix");
+			src:url("fonts/001e59a9-197e-4fb1-9e72-cef21b186c03.eot?#iefix") format("eot"),url("fonts/e5716290-d41e-4c97-a27c-7a20a46ddf45.woff2") format("woff2"),url("fonts/b681571f-aab2-4935-a99c-6ee1063ce638.woff") format("woff"),url("fonts/1d88a9b0-aac0-40df-baf7-a630cd19cc5d.ttf") format("truetype"),url("fonts/40a247b1-2840-4953-b24b-8a82ace0673b.svg#40a247b1-2840-4953-b24b-8a82ace0673b") format("svg");
+			}
+			@font-face{
+			font-family:"Neue Haas Unica W01 Lig1492560";
+			src:url("fonts/b7efcac9-8856-44e9-aa4b-ddc054ecf711.eot?#iefix");
+			src:url("fonts/b7efcac9-8856-44e9-aa4b-ddc054ecf711.eot?#iefix") format("eot"),url("fonts/0e1c7b56-be29-4eec-b5fa-f7e29da05704.woff2") format("woff2"),url("fonts/dd305109-19c2-45b3-b6e2-bcda814c27aa.woff") format("woff"),url("fonts/e4f669d4-b0d1-4770-befa-06c56782a3eb.ttf") format("truetype"),url("fonts/e67035a8-dfc1-42c5-bef8-80630321df05.svg#e67035a8-dfc1-42c5-bef8-80630321df05") format("svg");
+			}
+			@font-face{
+			font-family:"Neue Haas Unica W01 Regular";
+			src:url("fonts/0ebd7648-5847-404a-a88a-28a353c0921c.eot?#iefix");
+			src:url("fonts/0ebd7648-5847-404a-a88a-28a353c0921c.eot?#iefix") format("eot"),url("fonts/e0d80810-f7e3-4fea-8c57-ef8116f0465d.woff2") format("woff2"),url("fonts/27645c8a-608b-4abf-a2f1-c4407b576723.woff") format("woff"),url("fonts/bd3b3439-8eff-445c-80ed-87064138ca7d.ttf") format("truetype"),url("fonts/bf3731ee-64fe-49c1-b8a6-a4edbff3c74a.svg#bf3731ee-64fe-49c1-b8a6-a4edbff3c74a") format("svg");
+			}
+			@font-face{
+			font-family:"Neue Haas Unica W01 Hea1492559";
+			src:url("fonts/960b8d39-bee7-47a1-a258-c73f8aabab91.eot?#iefix");
+			src:url("fonts/960b8d39-bee7-47a1-a258-c73f8aabab91.eot?#iefix") format("eot"),url("fonts/cc589c6c-1ce4-4279-8684-c378497d1c68.woff2") format("woff2"),url("fonts/8546c78d-5a38-4c7b-9371-5a70d803922a.woff") format("woff"),url("fonts/cb4a00d4-9830-4ba3-914c-8eae604824b6.ttf") format("truetype"),url("fonts/611ebee3-c884-4580-86d4-d81a6180c188.svg#611ebee3-c884-4580-86d4-d81a6180c188") format("svg");
+			}
+			@font-face{
+			font-family:"Neue Haas Unica W01 Bold";
+			src:url("fonts/debbfa41-3ea8-466c-9174-de4e919598ed.eot?#iefix");
+			src:url("fonts/debbfa41-3ea8-466c-9174-de4e919598ed.eot?#iefix") format("eot"),url("fonts/39bb8fb3-84a4-4ab8-ae45-db1834f5d807.woff2") format("woff2"),url("fonts/96fd4fb4-75db-412f-986d-d65380ee0ccf.woff") format("woff"),url("fonts/d86863bd-a6e3-4cd0-abe7-a711edaaebc6.ttf") format("truetype"),url("fonts/eea53212-4a22-464f-bb6f-5cd5b17467ff.svg#eea53212-4a22-464f-bb6f-5cd5b17467ff") format("svg");
+			}
+			@font-face{
+			font-family:"Neue Haas Unica W01 Bol1492557";
+			src:url("fonts/8508cf3d-6461-49ec-a435-858f5ead2f8b.eot?#iefix");
+			src:url("fonts/8508cf3d-6461-49ec-a435-858f5ead2f8b.eot?#iefix") format("eot"),url("fonts/dfa9d078-533c-44d9-9dd9-deaafbff5a96.woff2") format("woff2"),url("fonts/4142b00a-232a-49e8-803c-541f8b932fa1.woff") format("woff"),url("fonts/cecd8354-0b61-4068-b4e6-3bb48ba2ca12.ttf") format("truetype"),url("fonts/d12886e5-81c2-4844-99c4-e329d374da92.svg#d12886e5-81c2-4844-99c4-e329d374da92") format("svg");
+			}
+
+  html, body {
+    height: 100%;
+    margin: 0px;
+  }
+
+  body {
+    padding: 8px;
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+  }
+
+  h1 {
+  	font-size: 5vw;
+  	line-height: 120%;
+  }
+
+  .split {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .content {
+    border: 1px solid #C0C0C0;
+    box-shadow: inset 0 1px 2px #e4e4e4;
+    background-color: #fff;
+  }
+
+  .gutter {
+    background-color: transparent;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .gutter.gutter-horizontal {
+    cursor: col-resize;
+    background-image: url('images/grips/vertical.png');
+  }
+
+  .gutter.gutter-vertical {
+    cursor: row-resize;
+    background-image: url('images/grips/horizontal.png');
+  }
+
+  .split.split-horizontal, .gutter.gutter-horizontal {
+    height: 100%;
+    float: left;
+  }
+
+  .content {
+  border: 1px solid #C0C0C0;
+  box-shadow: inset 0 1px 2px #e4e4e4;
+  background-color: #fff;
+  }
+
+  #a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q {overflow-x: hidden; overflow-y: auto;}
+
+  #a, #o, #p, #q {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	justify-content: center;
+  }
+
+	</style>
+</head>
+<body>
+		<div id="one" class="split split-horizontal">
+			<div id="a"><h1>Oslo, Aug 8&ndash;13</h1></div>
+			<div id="b">
+				<p>The second edition of The Ventriloquist Summerschool will look into the role of illusion as a way of being, working and generating knowledge. How does illusion take part in the constructs we build for ourselves and for the other? What's involved in accepting, rejecting, validating and iterating such constructs and how do we use them to project and deal with what's in front and ahead of us?</p>
+
+				<p/>This year the Ventriloquist Summerschool is taking place at the gallery 1857 in the Gr&oslash;nland area of Oslo. The whole gallery area, which is made up of a former lumberyard, will be at the disposal of the summerschool. In addition, of course, to the city itself.</p>
+
+				<p>The summer school is open for anyone of any age, studying or working within design, the arts and all other creative fields. Applications are welcomed from all over the world &ndash; both from students and professionals. We especially encourage those with an interest in exploring the illusions of constructs to apply. Luckily, we can invite people to attend, free of charge.</p>
+
+				<p>The date is 8&ndash;13th of August, full time. The Ventriloquist Summerschool Public Programme will include evening lectures open to the public.</p>
+			</div>
+		</div>
+		<div id="two" class="split split-horizontal">
+			<div id="c">The second edition of The Ventriloquist Summerschool will look into the role of illusion as a way of being, working and generating knowledge. How does illusion take part in the constructs we build for ourselves and for the other? What's involved in accepting, rejecting, validating and iterating such constructs and how do we use them to project and deal with what's in front and ahead of us?</div>
+			<div id="d">WS Kristina</div>
+			<div id="e">WS Joao</div>
+			<div id="f">WS Talk</div>
+			<div id="g">WS Anu</div>
+			<div id="h">WS Nicole</div>
+		</div>
+		<div id="three" class="split split-horizontal">
+			<div id="i">The second edition of The Ventriloquist Summerschool will look into the role of illusion as a way of being, working and generating knowledge. How does illusion take part in the constructs we build for ourselves and for the other? What's involved in accepting, rejecting, validating and iterating such constructs and how do we use them to project and deal with what's in front and ahead of us?</div>
+			<div id="j">Bio Kristina</div>
+			<div id="k">Bio Joao</div>
+			<div id="l">Bio Talk</div>
+			<div id="m">Bio Anu</div>
+			<div id="n">Bio Nicole</div>
+		</div>
+		<div id="four" class="split split-horizontal">
+			<div id="o"><h1>Apply</h1></div>
+			<div id="p"><h1>until</h1></div>
+			<div id="q"><h1>June 25th</h1></div>
+		</div>
+		<div id="five" class="split split-horizontal">Sponsors</div>
+		<div id="six" class="split split-horizontal">Colophon</div>
+</body>
+
+<script src="scripts/split.js"></script>
+<script type="text/javascript">
+
+Split(['#one', '#two', '#three', '#four', '#five', '#six'], {
+	sizes: [20, 15, 15, 30, 10, 10],
+    minSize: 60,
+	cursor: 'col-resize',
+	snapOffset: 1
+});
+
+Split(['#a', '#b'], {
+    direction: 'vertical',
+	cursor: 'row-resize',
+	snapOffset: 1	    
+});
+
+Split(['#c', '#d', '#e', '#f', '#g', '#h'], {
+    direction: 'vertical',
+	cursor: 'row-resize',
+	snapOffset: 1
+});
+
+
+Split(['#i', '#j', '#k', '#l', '#m', '#n'], {
+    direction: 'vertical',
+	cursor: 'row-resize',
+	snapOffset: 1
+});
+
+Split(['#o', '#p', '#q'], {
+    direction: 'vertical',
+	cursor: 'row-resize',
+	snapOffset: 1
+});
+
+</script>
