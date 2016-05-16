@@ -140,11 +140,6 @@ a:hover { color: red !important; background-color: yellow; }
   	margin-right: 2px;  	
   }
 
-  #o:hover, #p:hover {
-  	color: yellow;
-  	cursor: pointer;
-  }
-
   #o, #p, #q p, h1 {
   	color: yellow;
   	margin: 20px;
