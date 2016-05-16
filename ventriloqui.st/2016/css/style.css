@@ -149,6 +149,10 @@ a:hover { color: red !important; background-color: yellow; }
     overflow: hidden;
   }
 
+  #h {
+    margin-bottom: -5px;
+  }
+
   .logos {
 	display: block;
 	max-width: 90px;
