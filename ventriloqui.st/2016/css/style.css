@@ -112,7 +112,7 @@ a:hover { color: red !important; background-color: yellow; }
   }
 
   #tvss h1 {
-  	color: RGBA(131, 251, 49, 1);;
+  	color: RGBA(131, 251, 49, 1);
   }
 
   #a h1 {
@@ -150,11 +150,15 @@ a:hover { color: red !important; background-color: yellow; }
   	margin: 20px;
   }
 
+  #r, #s, #t {
+    overflow: hidden;
+  }
+
   .logos {
 	display: block;
-	max-width: 90%;
-	min-width: 20%;
+	max-width: 90px;
   padding-top: 10px;
+  padding-left: -5px;
   padding-bottom: 10px;
 	height: auto;
 }
