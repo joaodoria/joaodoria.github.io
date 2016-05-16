@@ -48,8 +48,8 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
 
   p {
   	font-family:"Neue Haas Unica W01 Light";
-  	font-size: 14px;
-  	line-height: 16px;
+  	font-size: 16px;
+  	line-height: 18px;
   	margin: 10px;
   }
 
@@ -62,6 +62,7 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
   h1 {
   	font-family:"Neue Haas Unica W01 Light";
   	font-size: 5vw;
+  	font-weight: 100;
   	line-height: 100%;
   	text-align: center;
   }
@@ -129,6 +130,23 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
 	-webkit-justify-content: center;
 	align-items: center;
 	justify-content: center;
+  }
+
+  #a, #b, #tvss {
+  	background-color: RGBA(25, 34, 251, 1);
+  }
+
+  #tvss h1 {
+  	color: RGBA(255, 255, 255, 1);
+  }
+
+  #a h1 {
+  	color: RGBA(255, 181, 33, 1);
+  }
+
+  #b p {
+/*  	color: RGBA(0, 252, 255, 1);
+*/		color: white;
   }
 
 	</style>
@@ -226,7 +244,7 @@ font-family:'Neue Haas Unica W01 Bol1492557';*/
 <script type="text/javascript">
 
 Split(['#one', '#two', '#three', '#four', '#five', '#six'], {
-	sizes: [40, 5, 5, 30, 10, 10],
+	sizes: [40, 15, 5, 25, 7.5, 7.5],
     minSize: 60,
 	cursor: 'col-resize',
 	snapOffset: 1
