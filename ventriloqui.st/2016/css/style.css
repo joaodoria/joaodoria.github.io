@@ -2,6 +2,9 @@
     -webkit-font-smoothing: antialiased;
   }
 
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,.25); border-radius: 5px; }
+
 	*::selection{ color: chartreuse; }
 	*::-moz-selection{ color: chartreuse; }
 
